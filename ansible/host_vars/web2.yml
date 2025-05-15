@@ -1,11 +1,32 @@
 apache_port: 8082
 pagina_html: |
-  <html>
-    <head><title>Tengen</title></head>
-    <body style="background-color:purple; color:white; text-align:center;">
-      <h1>Servidor de Tengen Uzui</h1>
-      <img src="/images/tengen.jpg" alt="Tengen" width="300">
-      <p>¡El sonido del estilo flashy!</p>
-    </body>
-  </html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tengen - Servidor del Sonido</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #4a148c, #8e24aa);
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+    img {
+      border: 5px solid #fff;
+      border-radius: 15px;
+      width: 300px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    }
+  </style>
+</head>
+<body>
+  <h1>Bienvenido al servidor de Tengen</h1>
+  <img src="/images/tengen.png" alt="Tengen Uzui, Pilar del Sonido">
+  <p>Luce extravagante o no lo hagas</p>
+  <p>Tengen Uzui, con su estilo llamativo y tecnicas explosivas, fue el Pilar del Sonido. Su lucha en el Distrito del Entretenimiento mostro su valentía, estrategia y fuerte vinculo con sus esposas.</p>
+</body>
+</html>
 

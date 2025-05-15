@@ -1,11 +1,31 @@
 apache_port: 8085
 pagina_html: |
-  <html>
-    <head><title>Inosuke</title></head>
-    <body style="background-color:#2F4F4F; color:white; text-align:center;">
-      <h1>Servidor de Inosuke Hashibira</h1>
-      <img src="/images/inosuke.png" alt="Inosuke" width="300">
-      <p>¡Luchar sin pensar, pelear sin parar!</p>
-    </body>
-  </html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🐗 Inosuke - Servidor de la Bestia</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #455a64, #78909c);
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+    img {
+      border: 5px solid #fff;
+      border-radius: 15px;
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bienvenido al servidor de Inosuke</h1>
+  <img src="/images/inosuke.png" alt="Inosuke Hashibira, Cazador de la Bestia">
+  <p>Soy el rey de la montana</p>
+  <p>Criado por jabalies y portando espadas dentadas, Inosuke es un luchador impulsivo y feroz. A pesar de su rudeza, tiene un corazon puro y un fuerte sentido de la camaraderia.</p>
+</body>
+</html>
 

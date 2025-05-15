@@ -1,11 +1,31 @@
 apache_port: 8083
 pagina_html: |
-  <html>
-    <head><title>Tanjiro</title></head>
-    <body style="background-color:#228B22; color:white; text-align:center;">
-      <h1>Servidor de Tanjiro Kamado</h1>
-      <img src="/images/tanjiro.png" alt="Tanjiro" width="300">
-      <p>Respiración de agua, Hinokami Kagura.</p>
-    </body>
-  </html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tanjiro - Servidor del Sol</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #388e3c, #81c784);
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+    img {
+      border: 5px solid #fff;
+      border-radius: 15px;
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bienvenido al servidor de Tanjiro</h1>
+  <img src="/images/tanjiro.png" alt="Tanjiro Kamado, el Cazador del Sol">
+  <p>Con compasion y firmeza, sigo adelante</p>
+  <p>Tanjiro Kamado es un joven cazador de demonios que lucha por salvar a su hermana Nezuko. Heredero de la Respiracion del Sol, representa la esperanza, la empatia y la voluntad inquebrantable.</p>
+</body>
+</html>
 
