@@ -1,0 +1,11 @@
+apache_port: 8081
+pagina_html: |
+  <html>
+    <head><title>Rengoku</title></head>
+    <body style="background-color:orange; color:white; text-align:center;">
+      <h1>Bienvenido al servidor de Rengoku</h1>
+      <img src="/images/rengoku.png" alt="Rengoku" width="300">
+      <p>¡Corazón ardiente!</p>
+    </body>
+  </html>
+

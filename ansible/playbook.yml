@@ -1,0 +1,92 @@
+---
+- name: Configure Apache on all web servers
+  hosts: web
+  become: yes
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+        cache_valid_time: 3600
+
+    - name: Install Apache2
+      apt:
+        name: apache2
+        state: present
+
+    - name: Ensure Apache is running
+      service:
+        name: apache2
+        state: started
+        enabled: true
+
+    - name: Configurar Apache para escuchar en el puerto {{ apache_port }}
+      lineinfile:
+        path: /etc/apache2/ports.conf
+        regexp: '^Listen'
+        line: "Listen {{ apache_port }}"
+        state: present
+
+    - name: Establecer VirtualHost personalizado
+      copy:
+        dest: /etc/apache2/sites-available/000-default.conf
+        content: |
+          <VirtualHost *:{{ apache_port }}>
+              DocumentRoot /var/www/html
+              <Directory /var/www/html>
+                  Options Indexes FollowSymLinks
+                  AllowOverride None
+                  Require all granted
+              </Directory>
+          </VirtualHost>
+
+    - name: Crear carpeta de imágenes
+      file:
+        path: /var/www/html/images
+        state: directory
+        owner: www-data
+        group: www-data
+        mode: '0755'
+
+    - name: Copiar imagen de Rengoku
+      copy:
+        src: images/rengoku.png
+        dest: /var/www/html/images/rengoku.png
+      when: inventory_hostname == "web1"
+
+    - name: Copiar imagen de Tengen
+      copy:
+        src: images/tengen.jpg
+        dest: /var/www/html/images/tengen.jpg
+      when: inventory_hostname == "web2"
+
+    - name: Copiar imagen de Tanjiro
+      copy:
+        src: images/tanjiro.png
+        dest: /var/www/html/images/tanjiro.png
+      when: inventory_hostname == "web3"
+
+    - name: Copiar imagen de Muichiro
+      copy:
+        src: images/muichiro.png
+        dest: /var/www/html/images/muichiro.png
+      when: inventory_hostname == "web4"
+
+    - name: Copiar imagen de Inosuke
+      copy:
+        src: images/inosuke.png
+        dest: /var/www/html/images/inosuke.png
+      when: inventory_hostname == "web5"
+
+    - name: Escribir página HTML personalizada
+      copy:
+        content: "{{ pagina_html }}"
+        dest: /var/www/html/index.html
+        owner: www-data
+        group: www-data
+        mode: '0644'
+
+    - name: Reiniciar Apache para aplicar cambios
+      service:
+        name: apache2
+        state: restarted
+
