@@ -1,33 +1,33 @@
 apache_port: 8081
-pagina_html: 
+pagina_html: |
   <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rengoku - Servidor Flameante</title>
-  <style>
-    body {
-      background: linear-gradient(to bottom right, #ff6f00, #ff9800);
-      color: #fff;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      text-align: center;
-      padding: 40px;
-      margin: 0;
-    }
-    img {
-      border: 5px solid white;
-      border-radius: 15px;
-      width: 300px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    }
-  </style>
-</head>
-<body>
-  <h1>Bienvenido al servidor de Rengoku</h1>
-  <img src="/images/rengoku.png" alt="Rengoku, el Pilar de la Llama">
-  <p>Corazon ardiente</p>
-  <p>Kyojuro Rengoku fue el Pilar de la Llama, un espadachin noble y apasionado. Su valentia en el tren Mugen es recordada como un acto heroico, enfrentando a poderosos demonios sin retroceder.</p>
-</body>
-</html>
+  <html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rengoku - Servidor Flameante</title>
+    <style>
+      body {
+        background: linear-gradient(to bottom right, #ff6f00, #ff9800);
+        color: #fff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        padding: 40px;
+        margin: 0;
+      }
+      img {
+        border: 5px solid white;
+        border-radius: 15px;
+        width: 300px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Bienvenido al servidor de Rengoku</h1>
+    <img src="/images/rengoku.png" alt="Rengoku, el Pilar de la Llama">
+    <p>Corazon ardiente</p>
+    <p>Kyojuro Rengoku fue el Pilar de la Llama, un espadachin noble y apasionado. Su valentia en el tren Mugen es recordada como un acto heroico, enfrentando a poderosos demonios sin retroceder.</p>
+  </body>
+  </html>
 

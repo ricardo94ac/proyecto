@@ -1,31 +1,31 @@
 apache_port: 8084
-pagina_html: 
+pagina_html: |
   <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Muichiro - Servidor de la Niebla</title>
-  <style>
-    body {
-      background: linear-gradient(to bottom right, #90a4ae, #cfd8dc);
-      color: #000;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      text-align: center;
-      padding: 40px;
-    }
-    img {
-      border: 5px solid #000;
-      border-radius: 15px;
-      width: 300px;
-    }
-  </style>
-</head>
-<body>
-  <h1>Bienvenido al servidor de Muichiro</h1>
-  <img src="/images/muichiro.png" alt="Muichiro Tokito, Pilar de la Niebla">
-  <p>La niebla lo oculta todo... pero yo avanzo.</p>
-  <p>Muichiro Tokito, joven prodigio y Pilar de la Niebla, posee una mente brillante oculta tras su actitud dispersa. Su pasado tragico no le impidio convertirse en uno de los espadachines mas poderosos.</p>
-</body>
-</html>
+  <html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muichiro - Servidor de la Niebla</title>
+    <style>
+      body {
+        background: linear-gradient(to bottom right, #90a4ae, #cfd8dc);
+        color: #000;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        padding: 40px;
+      }
+      img {
+        border: 5px solid #000;
+        border-radius: 15px;
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Bienvenido al servidor de Muichiro</h1>
+    <img src="/images/muichiro.png" alt="Muichiro Tokito, Pilar de la Niebla">
+    <p>La niebla lo oculta todo... pero yo avanzo.</p>
+    <p>Muichiro Tokito, joven prodigio y Pilar de la Niebla, posee una mente brillante oculta tras su actitud dispersa. Su pasado tragico no le impidio convertirse en uno de los espadachines mas poderosos.</p>
+  </body>
+  </html>
 
