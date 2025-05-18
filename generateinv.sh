@@ -2,7 +2,7 @@
 
 # Requiere jq instalado
 if ! command -v jq &> /dev/null; then
-  echo "❌ jq no está instalado. Instálalo con: sudo apt install jq"
+  echo "jq no está instalado. Instálalo con: sudo apt install jq"
   exit 1
 fi
 
@@ -13,6 +13,6 @@ terraform output -json instance_ips | jq -r '.[]' | awk '{
     printf "web%d ansible_host=%s ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/id_rsa_terraform\n", NR, $1
 }' >> inventory.ini
 
-echo "✅ Inventory generado:"
+echo "Inventory generado:"
 cat inventory.ini
 
